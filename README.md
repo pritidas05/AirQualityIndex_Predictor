@@ -8,4 +8,4 @@
 ![5](https://github.com/pritidas05/AirQualityIndex_Predictor/assets/98904766/b37c08f2-1382-40ea-b39d-04d44dd2a9db)
 ![6](https://github.com/pritidas05/AirQualityIndex_Predictor/assets/98904766/d13d5491-603a-4077-b4d2-e4aef6db46bd)
 
- by - Priti Priya Das, Sneha Manna, Sagnik Ghosh, Nishitha Sahoo 
+ #By - Priti Priya Das, Sneha Manna, Sagnik Ghosh, Nishitha Sahoo 
