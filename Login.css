@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  font-weight: 400;
+  font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, label, span {
+  font-weight: 500;
+  font-family: "Georgia", serif;
+}
+
+body, html, #root, .auth-wrapper {
+  width: 100%;
+}
+
+.auth-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  background-image: url('./Image/Pollution.jpg');
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.form-login, .form-signup {
+  width: 450px;
+  margin: 7.5rem auto;
+  background: #ffffff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  padding: 40px 55px;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+.form-signup {
+  height: 495px;
+}
+
+.form-control:focus {
+  border-color: #167bff;
+  box-shadow: none;
+}
+
+h3 {
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 20px;
+}
+
+.custom-control-label {
+  margin-left: 5px;
+}
+
+.d-grid a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.forgot-password,
+.forgot-password a {
+  text-align: right;
+  font-size: 13px;
+  padding-top: 10px;
+  color: #7f7d7d;
+  margin: 0;
+}
+
+.forgot-password a {
+  color: #167bff;
+  text-decoration: none;
+}

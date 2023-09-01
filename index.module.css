@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&family=Roboto:wght@100;300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+.navbar {
+  background: linear-gradient(135deg, #3fa4c3, #f6f6f6) !important;
+  margin-bottom: -65px;
+
+}
+
+.navbar-brand {
+  font-size: 1.9rem !important;
+  color: #372ed8 !important;
+}
+
+.navbar a {
+  font-size: 1.3rem;
+  text-transform: capitalize;
+}
+
+.menu-active {
+  font-weight: bold;
+  color: #002ca5 !important;
+  border-bottom: 3px solid #002ca5!important; 
+  animation: menuActiveAnimation 0.5s ease-in-out;
+}
+
+.logo {
+  width: 150px;
+  height: 80px;
+  border-radius: 50%;
+  border: none;
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+@media (min-width: 992px) {
+  /* Large devices */
+  .logo {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 991px) {
+  /* Medium and small devices */
+  .logo {
+    margin-left: 0;
+  }
+}
+
+.logo:hover {
+  transform: scale(1.2);
+  border-color: #288d2d;
+}
+
+.navbar a:hover {
+  color: #3498db !important;
+}
+
+@media (max-width: 991px) {
+  .navbar-brand {
+    font-size: 1.5rem !important;
+  }
+  .menu-active {
+    font-weight: bold;
+    border-bottom: 3px solid orange !important; 
+  }
+
+}
+/* ------------------------------------------------------------------------------------------ */
+/* # HOME Main Landing Section */
+/* ------------------------------------------------------------------------------------------ */
+#header {
+  width: 100%;
+  height: 90vh;
+  margin-top: 70px;
+}
+
+#header h1 {
+  font-family: 'Architects Daughter', cursive;
+  margin: 0 0 10px 0;
+  font-size: 55px;
+  font-weight: 700;
+  color: black;
+  animation: slideInFromLeft 4s ease-in-out;
+}
+
+#header .brand-name {
+  font-family: 'Architects Daughter', cursive;
+  color: #002ca5;
+}
+
+#header h2 {
+  font-family: 'Architects Daughter', cursive;
+  color: #484848;
+  font-size: 24px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.btn-get-started {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #002ca5;
+  border: 2px solid #002ca5;
+  text-decoration: none;
+}
+
+#header .btn-get-started:hover {
+  background: #3498db;
+  color: #fff;
+}
+
+.header-img {
+  text-align: right;
+}
+
+.header-img img {
+  max-width: 100%;
+  height: 400px;
+  width: 296px;
+  display: block;
+  margin: -100px auto;
+  border-radius: 20px;
+}
+
+#header .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Add animation classes */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Add CSS classes for the image positioning */
+
+.image-container {
+  position: relative;
+  display: flex;
+  max-width: 300vw; /* Adjust the max width as needed */
+  max-height: 400vw; /* Adjust the max height as needed */
+  align-items: center;
+  justify-content: center;
+  height: 20%;
+}
+
+.middle-image {
+  z-index: 100;
+  position: absolute;
+  top: 0%;
+  left: calc(50% - 148.5px); /* Half of 297px (image width) */
+  transform: translate(-50%, -50%);
+}
+
+.left-image,
+.right-image {
+  z-index: 1;
+  position: absolute;
+  width: 250px; /* Original width */
+  height: 150px; /* Original height */
+}
+
+.left-image {
+  top: calc(100% + 12px); /* Adjust the distance as needed */
+  left: calc(50% - -3px); /* Half of 150px (image width) */
+}
+
+.right-image {
+  top: calc(100% + 12px); /* Adjust the distance as needed */
+  right: calc(50% - -3px); /* Half of 150px (image width) */
+}
+
+
+/* ------------------------------------------------------------------------------------------ */
+/* # ABOUT Main Landing Section */
+/* ------------------------------------------------------------------------------------------ */
+
+.upper-about-page {
+  background: linear-gradient(135deg, #3fa4c3, #f6f6f6);
+  height: 600px; 
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+ 
+}
+
+.lower-about-page {
+  background-color: #ffff;
+  height: 300px; 
+  width: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+@media (max-width: 768px) {
+  .upper-about-page {
+    height: 100vh;
+  }
+  
+  .lower-about-page {
+    height: 100vh;
+  }
+}
+.centered-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Make sure the container takes up full height */
+}
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /* ExampleExampleCarouselImage */
+  /*-----------------------------------------------------------------------------------------------------------------------------------------------  */
+
+  .carouselContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+  }
+  
+  .slide {
+    width: 700px;
+    height: 500px;
+    overflow: hidden; /* Prevent overflow */
+    position: relative;
+    transition: transform 0.5s ease-in-out; /* Add this transition */
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute; /* Add position */
+    top: 0; /* Add top position */
+    left: 0; /* Add left position */
+  }
