@@ -1,6 +1,5 @@
 
 # AirQualityIndex_Predictor
-
 ![1](https://github.com/pritidas05/AirQualityIndex_Predictor/assets/98904766/22d43709-3b8f-40a8-b24f-6df36223f399)
 ![2](https://github.com/pritidas05/AirQualityIndex_Predictor/assets/98904766/d93bb1fd-5440-4269-957f-3bbb6c5b92ce)
 ![2 5](https://github.com/pritidas05/AirQualityIndex_Predictor/assets/98904766/dd548750-de23-4245-bf1a-311374453694)
